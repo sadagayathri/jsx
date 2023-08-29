@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <div id="d11"></div>
+    <div id="d12"></div>
+    <div id="d13"></div>
+    <div id="d14"></div>
+    <div id="d15"></div>
+    <div id="d16"></div>
+    <div id="d17"></div>
+    <div id="d18"></div>
+    <div id="d19"></div>
+    <div id="d20"></div>
+
+    <script type="text/babel">
+        var X = function abc(){
+           
+            function pqr(){
+                alert("Hello Edupoly")
+            }
+            return (
+                <button onClick={pqr}>Click here to see alert</button>
+            )
+        }
+        ReactDOM.render(<X/>,document.getElementById('d1'))
+
+        var Y = function abc(){
+           
+            function pqr(){
+               console.log("Hello Edupoly")
+            }
+            return (
+                <button onClick={pqr}>Click here to see alert</button>
+            )
+        }
+        ReactDOM.render(<Y/>,document.getElementById('d2'))
+
+        var Z = function abc(){
+            function pqr(e){
+               console.log(e)
+            }
+            return (
+                <button onClick={pqr}>Click here to see alert</button>
+            )
+        }
+        ReactDOM.render(<Z/>,document.getElementById('d3'))
+
+        var A = function abc(){
+
+            function pqr(e){
+               console.log(e)
+            }
+            return (
+                <div style={{border:"2px solid",width:"300px",height:"200px"}} onClick={pqr}>Click here to see alert</div>
+            )
+        }
+        ReactDOM.render(<A/>,document.getElementById('d4'))
+
+        var B = function abc(){
+            function pqr(e){
+                console.log(e.clientX)
+                console.log(e.clientY)
+               
+            }
+            return (
+                <div style={{border:"2px solid",width:"300px",height:"200px"}} onClick={pqr}>Click here to see alert</div>
+            )
+        }
+        ReactDOM.render(<B/>,document.getElementById('d5'))
+
+        var C = function abc(){
+            function pqr(){
+                console.log("Welcome to Edupoly ReactJs")
+               
+               
+            }
+            return (
+                <div style={{border:"2px solid",width:"300px",height:"200px"}} onClick={pqr}>Welcome to Edupoly ReactJS</div>
+            )
+        }
+        ReactDOM.render(<C/>,document.getElementById('d6'))
+
+        var D = function abc(){
+           
+            function pqr(e){
+                console.log(e.target.id)
+               
+               
+            }
+            return (
+                <div style={{border:"2px solid",width:"300px",height:"200px"}} onClick={pqr} id="dd">Welcome to Edupoly ReactJS</div>
+            )
+        }
+        ReactDOM.render(<D/>,document.getElementById('d7'))
+
+        var E = function abc(){
+           
+            function pqr(){
+                console.log("Welcome to Edupoly ReactJs")
+               
+               
+            }
+            return (
+                <h1 onClick={pqr}>Welcome to Edupoly ReactJs</h1>
+            )
+        }
+        ReactDOM.render(<E/>,document.getElementById('d8'))
+
+
+        var F = function abc(){
+           
+            function pqr(e){
+                console.log(e)
+               
+               
+            }
+            return (
+                <button onClick={pqr}>Click here to see alert</button>
+            )
+        }
+        ReactDOM.render(<F/>,document.getElementById('d9'))
+
+        var G = function abc(){
+           function pqr(){
+               var x=document.getElementById("inp")
+               console.log(x.value)
+              
+           }
+           return ( 
+               <div>
+               <input type="text" id="inp"/>
+               <button onClick={pqr}>Click here</button>
+               </div>
+
+                   
+           )
+       }
+       ReactDOM.render(<G/>,document.getElementById('d10'))
+//12
+        var H = function abc(){
+            function mno(){
+                document.getElementById('df').innerHTML = document.getElementById('dg').value
+            }
+            return (
+                <div>
+                    <input type="text" id="dg"/>
+                    <button onClick={mno}>Click here to see alert</button>
+                    <h1 id="df"></h1>
+                </div>
+                )
+        }
+        ReactDOM.render(<H/>,document.getElementById('d11'))
+//13
+var I = function abc(){
+            function mno(){
+                document.getElementById('h').innerHTML = document.getElementById('s').value.toUpperCase()
+            }
+            return (
+                <div>
+                    <input type="text" id="s"/>
+                    <button onClick={mno}>Click here to see alert</button>
+                    <h1 id="h"></h1>
+                </div>
+                )
+        }
+        ReactDOM.render(<I/>,document.getElementById('d12'))
+//14
+var J = function abc(){
+            function mno(){
+                document.getElementById('hh1').innerHTML = document.getElementById('s1').value.toUpperCase()
+            }
+            return (
+                <div>
+                    <input type="text" id="s1" onKeyUp={mno}/>
+                    <h1 id="hh1"></h1>
+                </div>
+                )
+        }
+        ReactDOM.render(<J/>,document.getElementById('d13'))
+//15
+var K = function abc(){
+            function mno(){
+                document.getElementById('hh2').innerHTML=document.getElementById('s2').value
+            }
+            function xyz(){
+                document.getElementById('hh2').innerHTML=""
+                document.getElementById('s2').value=""
+            }
+            return (
+                <div>
+                    <input type="text" id="s2" onKeyUp={mno}/>
+                    <button onClick={xyz}>Clear Text</button>
+                    <h1 id="hh2"></h1>
+                </div>
+                )
+        }
+        ReactDOM.render(<K/>,document.getElementById('d14'))
+//18
+
+            var StudentsList = () => {
+                var [selectedName, setSelectedName] = React.useState("");
+                var [selectedIndex, setSelectedIndex] = React.useState(null);
+
+                var students = [
+                    {
+                        firstname: "Praveen",
+                        lastname: "Gubbala",
+                        age: 40,
+                        gender: "male",
+                    },
+                    {
+                        firstname: "Smrithi",
+                        lastname: "mandana",
+                        age: 25,
+                        gender: "female",
+                    },
+                    {
+                        firstname: "mithali",
+                        lastname: "raj",
+                        age: 39,
+                        gender: "female",
+                    },
+                    {
+                        firstname: "Rohit",
+                        lastname: "Sharma",
+                        age: 35,
+                        gender: "male",
+                    },
+                    {
+                        firstname: "Sachin",
+                        lastname: "Tendulkar",
+                        age: 50,
+                        gender: "male",
+                    },
+                ];
+
+                var handleClick = (index, firstname) => {
+                    setSelectedIndex(index);
+                    setSelectedName(firstname);
+                };
+
+                return (
+                    <div>
+                        <ul>
+                            {students.map((student, index) => (
+                               <li key={index} onClick={() => handleClick(index, student.firstname)}>
+                                    {student.firstname}
+                                </li>
+                            ))}
+                        </ul>
+                        <h1>{selectedName}</h1>
+                        <h2>{selectedIndex}</h2>
+                    </div>
+                );
+            };
+
+            ReactDOM.render(<StudentsList />, document.getElementById('d15'));
+//
+var L=function abc(){
+   
+    var [students, setStudents] = React.useState([
+                    {
+                        firstname: "Praveen",
+                        lastname: "Gubbala",
+                        age: 40,
+                        gender: "male",
+                    },
+                    {
+                        firstname: "Smrithi",
+                        lastname: "mandana",
+                        age: 25,
+                        gender: "female",
+                    },
+                    {
+                        firstname: "mithali",
+                        lastname: "raj",
+                        age: 39,
+                        gender: "female",
+                    },
+                ]);
+                
+                function showindex(student,index){
+                    document.getElementById("hh3").innerHTML=student.lastname+ " is at index" +index;
+                }
+
+    return (
+        <div>
+            <ul>
+                {
+                students.map((student,index)=>{
+                    return <li>
+                        {student.firstname} 
+                        <button onClick={()=>{showindex(student,index)}}>See</button>
+                        </li>
+                })
+                }
+            </ul>
+            <h1 id="hh3"></h1>
+        </div>
+    )
+    
+}
+ReactDOM.render(<L/>, document.getElementById('d16'));      
+
+
+
+
+
+    </script>
+   
+</body>
+</html>
